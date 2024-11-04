@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box; /* after margin and padding it will not effect size of the element */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: white;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%; /* if I put image to div with certain size it will not brake from div*/
+}
+
+/* UTILITY CLASS - for different size of containers */
+.Container{
+    max-width: 1100px;
+    margin: 0 auto;  /* top and bottom 0 | left and right auto */
+    padding: 0 15px; /* top and bottom 0 | left and right 15px */
+}
+
+.container-sm{
+    max-width: 800px;
+    margin: 0 auto;  /* top and bottom 0 | left and right auto */
+    padding: 0 15px; /* top and bottom 0 | left and right 15px */
+}
