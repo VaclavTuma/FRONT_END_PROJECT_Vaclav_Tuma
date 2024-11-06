@@ -69,6 +69,27 @@ img{
 }
 
 
+/* H E R O*/
+.hero{
+    margin-bottom: 50px;
+}
+
+.hero .Container{
+    background: url(../Images/Images.png) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content{
+    width: 70%;
+}
+
+.hero .hero-text{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
 /* UTILITY CLASS - for different size of containers */
 .Container{
     max-width: 1100px;
