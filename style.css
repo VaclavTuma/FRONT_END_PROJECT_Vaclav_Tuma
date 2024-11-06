@@ -90,6 +90,33 @@ img{
     margin-bottom: 20px;
 }
 
+
+/* VIDEO */
+.video {
+    padding: 10px 0 40px;
+}
+
+.video-content{
+    display: flex;
+    flex-direction: column; /* due to this is button under video*/
+    align-items: center; /* now button will not be wide*/
+}
+
+.video-preview{
+    margin-bottom: 20px;
+}
+
+/* TESTAMONIALS */
+.testimonials{
+    padding: 40px 0;
+}
+
+.testimonials .testimonials-heading{
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+
 /* UTILITY CLASS - for different size of containers */
 .Container{
     max-width: 1100px;
@@ -175,4 +202,26 @@ img{
 
 .text-center{
     text-align: center;
+}
+
+
+/* BACKGROUND */
+.bg-primary{
+    background: var(--primary-color);
+    color: white;
+}
+
+.bg-light{
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-dark{
+    background: var(--dark-color);
+    color: white;
+}
+
+.bg-black{
+    background: black;
+    color: white;
 }
