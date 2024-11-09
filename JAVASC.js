@@ -34,3 +34,15 @@ document.addEventListener('DOMContentLoaded',function(){
         });
     });
 });
+
+
+
+// MOBILE MENU
+document.addEventListener('DOMContentLoaded',() =>{
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    hamburgerButton.addEventListener('click',() =>{
+        mobileMenu.classList.toggle('active')
+    });
+});
