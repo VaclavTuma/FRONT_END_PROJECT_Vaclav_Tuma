@@ -21,8 +21,14 @@ document.addEventListener('DOMContentLoaded',function(){
         // close others 
         const otherGroups = faqContainer.querySelectorAll('.faq-group');
 
-        otherGroups.forEach((otherGroups), function() {
-            if(otherGroups != group){
+        otherGroups.forEach((otherGroup) => {
+            if(otherGroup !== group){
+                const otherGroupBody = otherGroup.querySelector('.faq-group-body');
+                const otherIcon = otherGroup.querySelector('.faq-group-header i');
+
+                otherGroupBody.classList.remove('open');
+                otherIcon.classList.remove('fa-minus');
+                otherIcon.classList.add('fa-plus');
 
             }
         });
