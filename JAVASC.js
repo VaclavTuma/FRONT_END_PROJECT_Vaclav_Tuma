@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 otherIcon.classList.add('fa-plus');
 
             }
-        });
+        }); //
     });
 });
 
