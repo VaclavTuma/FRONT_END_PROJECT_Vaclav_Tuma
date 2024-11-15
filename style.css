@@ -5,9 +5,13 @@
 }
 
 :root{
-    --primary-color: #4891ff;
+    
+    /*--primary-color: #00AEEF;*/
+    --primary-color: #0056B8;
+    --najbrt-blue-color: #0056B8;
     --light-color: #f4f4f6;
-    --dark-color: #111;
+    --dark-color: black;
+    --green-color: #0CB34F;
 }
 
 
@@ -33,9 +37,22 @@ img{
 }
 
 
+
+/* LOGO */
+/*
+.Nav_bar .Container .Logo{
+    width: 30%;
+    height: 30%;
+    margin-top: 20px;
+    padding: 0 50px;
+    min-width: 200px;
+    min-height: 200px;
+}*/
+
+
 .Nav_bar{
     background: white;
-    padding: 20px;
+    padding: 1px;
 }
 
 
@@ -43,10 +60,19 @@ img{
     display: flex;
     justify-content: space-between; /* this pushes menue to the side*/
     align-items: center;
+    margin-top: 20px;
+    
+}
+
+.Nav_bar .Container .Logo{
+    max-width: 20%;
+    max-height: 200px;
+    
 }
 
 .Nav_bar .Main_menu ul{
     display: flex;
+    margin-left: 60px;
 }
 
 .Nav_bar ul li a{
@@ -73,17 +99,22 @@ img{
 /* H E R O*/
 .hero{
     margin-bottom: 50px;
+    
 }
 
 .hero .Container{
-    background: url(../Images/Images.png) no-repeat;
+    background: url(../Images/Railjet1.jpg) no-repeat;
     background-size: contain;
-    background-position: center bottom;
-    height: 550px;
+    background-position: top;
+    /*background-position: center bottom;*/
+    height: 800px;
+    width: 100%;
+
+    
 }
 
 .hero .hero-content{
-    width: 70%;
+    width: 100%;
 }
 
 .hero .hero-text{
@@ -91,16 +122,25 @@ img{
     margin-bottom: 20px;
 }
 
+.hero .hero-content .hero-heading{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
 
 /* VIDEO */
 .video {
     padding: 10px 0 40px;
+    border-top: 10px solid yellow;
 }
 
-.video-content{
+.video .video-content{
     display: flex;
     flex-direction: column; /* due to this is button under video*/
     align-items: center; /* now button will not be wide*/
+    
 }
 
 .video-preview{
@@ -132,7 +172,7 @@ img{
 
 /* UTILITY CLASS - for different size of containers */
 .Container{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;  /* top and bottom 0 | left and right auto */
     padding: 0 15px; /* top and bottom 0 | left and right 15px */
 }
@@ -143,12 +183,8 @@ img{
     padding: 0 15px; /* top and bottom 0 | left and right 15px */
 }
 
-.Container .Logo{
-    width: 15%;
-    height: 15%;
-    margin-top: 20px;
-    padding: 0 15px;
-}
+
+
 
 
 /* PRICING */
@@ -301,7 +337,7 @@ img{
 /* CARD */
 .card{
     background: white;
-    color: #000;
+    color: var(--dark-color);
     border-radius: 10px;
     padding: 20px;
 }
@@ -331,7 +367,8 @@ img{
 }
 
 .btn-dark{
-    background: black;
+    background: var(--dark-color);
+    /*background: black;*/
     color: white;
 }
 
@@ -399,7 +436,12 @@ img{
 }
 
 .bg-black{
-    background: black;
+    background: var(--dark-color);
+    color: white;
+}
+
+.bg-green{
+    background: var(--green-color);
     color: white;
 }
 
@@ -474,6 +516,8 @@ img{
 
     .Nav_bar .hamburger-button{
         display: block;
+        margin-top: -20px;
+        padding: 0 15px;
     }
 
     .hero .Container{
@@ -502,10 +546,10 @@ img{
 
 
     .Container .Logo{
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;/*
         margin-top: 50px;
-        padding: 0 15px;
+        padding: 0 15px;*/
     }
 
 
