@@ -12,6 +12,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" href="/Images/CD_favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css ">
+
+        <!-- LEAFLET-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
     </head>
     <body>
         <!-- NAVIGATION MENUE BAR -->
@@ -79,13 +85,35 @@
                         <a href="#" class="btn btn-primary"> Our Trains </a>
                         <a href="#" class="btn btn-primary"> 
                             <i class="fas fa-laptop"></i> 
-                            Working on Moove? Try First Class 
+                            Working on Moove? Try Our First Class 
                         </a>
                     </div>
                 </div>
             </div>
 
         </section>
+
+
+        <!-- MAP SECTION -->
+        <section class="map bg-primary">
+            <div class="Container-sm">
+                <h2 class="map-heading text-xl text-center">
+                    Where can you find us? In every corner of the Czech Republic!
+                </h2>
+
+                <div class="map-itself" id="map2">
+
+                </div>
+                <!--
+                <div class="video-content">
+                    <a href="#">
+                        <img src="Images/video.png" alt="video" class="video-preview">
+                    </a>
+                    <a href="" class="btn btn-primary"> GET STARTED</a>
+                </div>-->
+            </div>
+        </section>
+
 
         <!-- VIDEO SECTION-->
         <section class="video bg-primary">

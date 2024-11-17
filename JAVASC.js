@@ -35,6 +35,46 @@ document.addEventListener('DOMContentLoaded',function(){
     });
 });
 
+/*
+let map2 = L.map('map2').setView([49.799,15.441],7); // coordinates and zoom level
+let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    maxZoom: 19,
+    attribution:"© OpenStreetMap"
+}).addTo(map2);*/
+
+// fetch geojson data
+const fetch_data = async() =>{
+    const url = "republic.geojson"
+    const response = await fetch(url)
+    const data = await response.json()
+
+    init_map(data)
+};
+
+const init_map = (data) =>{
+    let map2 = L.map('map2',{
+        minZoom: -3
+    }); 
+    
+    let geojson = L.geoJSON(data,{
+
+    }).addTo(map2);
+    // coordinates and zoom level
+    let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+        maxZoom: 19,
+        attribution:"© OpenStreetMap"
+    }).addTo(map2);
+
+    L.marker([50.082865,14.435198]).addTo(map2)
+    .bindPopup('Railway station Praha hl.n.')
+    .openPopup();
+
+    map2.fitBounds(geojson.getBounds())
+}
+fetch_data();
+
+
+
 // MOBILE MENU
 document.addEventListener('DOMContentLoaded',() =>{
     const hamburgerButton = document.querySelector('.hamburger-button');
