@@ -242,8 +242,6 @@ img{
 }
 
 .faq .faq-group{
-    border-bottom: 5px solid yellow;
-    /*padding-bottom: 20px ;*/
     background: white;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -251,7 +249,7 @@ img{
 }
 
 .faq .faq-group .faq-group-header{
-    padding: 20px 0;
+    padding: 8px 0;
     margin-bottom: 20px;
     position: relative;
     color: black;
@@ -261,20 +259,21 @@ img{
 .faq h3{
     color: black;
     transition: 0.5s;
+    
 }
 
 
 .faq .faq-group .faq-group-header h4{
     font-weight: 600;
-    width: 95%;
+    width: 100%;
     color: black;
-    
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .faq .faq-group .faq-group-header i{
     position: absolute;
     right: 0;
-    top: 35px;
+    top: 30px;
     font-size: 1.3rem;
     cursor: pointer;    
 }
@@ -302,6 +301,7 @@ img{
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .faq ul.faq-menu li{
