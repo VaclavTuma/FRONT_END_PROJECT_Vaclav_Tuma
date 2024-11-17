@@ -9,9 +9,10 @@
     /*--primary-color: #00AEEF;*/
     --primary-color: #0056B8;
     --najbrt-blue-color: #0056B8;
+    --najbrt-ligit-gray-color: #A0A5A9;
+    --najbrt-light-blue-color: #00AEEF;
     --light-color: #f4f4f6;
     --dark-color: black;
-    --green-color: #0CB34F;
 }
 
 
@@ -236,11 +237,12 @@ img{
 /* FAQ */
 
 .faq{
-    padding: 40px 0;  
+    padding: 40px 0;
+
 }
 
 .faq .faq-group{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid white;
     padding-bottom: 20px ;
 }
 
@@ -248,11 +250,19 @@ img{
     padding: 20px 0;
     margin-bottom: 15px;
     position: relative;
+    color: black;
 }
+
+
+.faq h3{
+    color: black;
+}
+
 
 .faq .faq-group .faq-group-header h4{
     font-weight: 600;
     width: 95%;
+    color: black;
 }
 
 .faq .faq-group .faq-group-header i{
@@ -261,16 +271,20 @@ img{
     top: 35px;
     font-size: 1.3rem;
     cursor: pointer;
+    
 }
 
 .faq .faq-group .faq-group-body{
     display: none;
+    
 }
 
 .faq .faq-group .faq-group-body.open{ /* if it has open then it is  showen*/
     display: block;
+    color: rgb(28, 27, 27);
 }
 
+/* faq menu */
 .faq ul.faq-menu{
     max-width: 400px;
     margin: auto;
@@ -288,11 +302,14 @@ img{
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
+    
 }
 
 .faq ul.faq-menu li.active{
     background: var(--primary-color);
     color: white;
+    padding: 10px 50px;
+    
 }
 
 
@@ -435,7 +452,7 @@ img{
 }
 
 .bg-light{
-    background: var(--light-color);
+    background: var(--najbrt-light-blue-color);
     color: #333;
 }
 
@@ -516,7 +533,72 @@ img{
     .text-xl{
         font-size: 2.5rem;
     }
+
+
+        /* HERO */
+    .hero .Container{
+        background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
+        background-size: 96%;
+        background-position: center 90px;
+        
+    }
+
+    .hero .hero-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .hero-text{
+        width: 100%;
+        margin-top: 71%;
+        margin-bottom: 12px;
+    }
+
+    .hero .hero-buttons .btn{
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+
+    }
+
+
 }
+
+@media (max-width:736px){
+    .text-xl{
+        font-size: 2.5rem;
+    }
+
+
+        /* HERO */
+    .hero .Container{
+        background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
+        background-size: 95%;
+        background-position: center 150px;
+        
+    }
+
+    .hero .hero-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .hero-text{
+        width: 100%;
+        margin-top: 71%;
+        margin-bottom: 12px;
+    }
+
+    .hero .hero-buttons .btn{
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+
+    }
+
+
+}
+
 
 @media (max-width:670px){ /* smaller mobile*/
 
