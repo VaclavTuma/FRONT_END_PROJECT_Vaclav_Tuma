@@ -53,7 +53,8 @@ const fetch_data = async() =>{
 
 const init_map = (data) =>{
     let map2 = L.map('map2',{
-        minZoom: -3
+        minZoom: -3,
+        zoomSnap: 0.1
     }); 
     
     let geojson = L.geoJSON(data,{
@@ -70,6 +71,7 @@ const init_map = (data) =>{
     .openPopup();
 
     map2.fitBounds(geojson.getBounds())
+    map2.setZoom(6.74);
 }
 fetch_data();
 

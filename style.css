@@ -127,16 +127,19 @@ img{
     
 }
 
+.map .map-heading{
+    margin-bottom: 20px;
+}
 
 #map2{
-    
     height: 500px;
     width: 100%;
     margin-bottom: 10px;
-    margin-top: 2%;
 }
 
+
 /* VIDEO */
+/*
 .video {
     padding: 10px 0 40px;
     border-top: 10px solid yellow;
@@ -145,13 +148,13 @@ img{
 .video .video-content{
     display: flex;
     flex-direction: column; /* due to this is button under video*/
-    align-items: center; /* now button will not be wide*/
-    
+   /* align-items: center; /* now button will not be wide*/
+  /*  
 }
 
 .video-preview{
     margin-bottom: 20px;
-}
+}*/
 
 /* TESTAMONIALS */
 .testimonials{
