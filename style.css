@@ -248,7 +248,7 @@ img{
 
 .faq .faq-group .faq-group-header{
     padding: 20px 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
     color: black;
 }
@@ -256,6 +256,7 @@ img{
 
 .faq h3{
     color: black;
+    transition: 0.5s;
 }
 
 
@@ -263,6 +264,7 @@ img{
     font-weight: 600;
     width: 95%;
     color: black;
+    
 }
 
 .faq .faq-group .faq-group-header i{
@@ -276,12 +278,12 @@ img{
 
 .faq .faq-group .faq-group-body{
     display: none;
-    
 }
 
 .faq .faq-group .faq-group-body.open{ /* if it has open then it is  showen*/
     display: block;
     color: rgb(28, 27, 27);
+    transition: 0.5s;
 }
 
 /* faq menu */
