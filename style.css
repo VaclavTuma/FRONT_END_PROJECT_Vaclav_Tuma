@@ -238,12 +238,16 @@ img{
 
 .faq{
     padding: 40px 0;
-
+    
 }
 
 .faq .faq-group{
-    border-bottom: 1px solid white;
-    padding-bottom: 20px ;
+    border-bottom: 5px solid yellow;
+    /*padding-bottom: 20px ;*/
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
 }
 
 .faq .faq-group .faq-group-header{
@@ -272,8 +276,7 @@ img{
     right: 0;
     top: 35px;
     font-size: 1.3rem;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 .faq .faq-group .faq-group-body{
@@ -284,6 +287,7 @@ img{
     display: block;
     color: rgb(28, 27, 27);
     transition: 0.5s;
+    
 }
 
 /* faq menu */
