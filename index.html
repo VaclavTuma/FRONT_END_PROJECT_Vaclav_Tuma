@@ -375,7 +375,11 @@
                             </p>
                         </div>
                         <div class="train-class-card-body">
-                            <img src="./Images/secondclass.jpg" alt="Secondclass">
+                            <img src="./Images/secondclass.jpg" alt="Secondclass" class="clickable-image" onclick="openModal(this)">
+                            <div id="imageModal" class="modal">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <img class="modal-content" id="modalImage">
+                              </div>
                             <ul>
                                 <li>
                                     <i class="fas fa-check"></i> Real time monitoring
@@ -414,7 +418,11 @@
                         </div>
                         <div class="train-class-card-body">
                             
-                            <img src="./Images/firstclass.png" alt="Firstclass">
+                            <img src="./Images/firstclass.png" alt="Firstclass" class="clickable-image" onclick="openModal(this)">
+                            <div id="imageModal" class="modal">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <img class="modal-content" id="modalImage">
+                            </div>
                             
                             <ul>
                                 <li>
