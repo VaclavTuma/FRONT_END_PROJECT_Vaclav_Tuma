@@ -177,7 +177,7 @@ img{
     
 }
 
-.train-types .card p:nth-child(1), p:nth-child(4){ /* if I want only specific for one P element*/
+.train-types .card p:nth-child(1), p:nth-child(6){ /* if I want only specific for one P element*/
     margin-top: 30px;
     font-weight: bold;
 }
@@ -237,7 +237,7 @@ img{
   
 
   
-  /* The dots/bullets/indicators */
+  /* DOTS  */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -256,7 +256,7 @@ img{
   /* Fading animation */
   .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
   }
   
   @keyframes fade {

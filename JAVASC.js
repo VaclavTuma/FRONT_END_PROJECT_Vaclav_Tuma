@@ -33,6 +33,10 @@ document.addEventListener('DOMContentLoaded',function(){
             }
         }); //
     });
+
+   
+    
+
 });
 
 /*
@@ -94,30 +98,92 @@ document.addEventListener('DOMContentLoaded',() =>{
 
 // P O K U S
 let slideIndex = 1;
+//showSlides(slideIndex);
+
+// NEXT AND PREVIOUS BUTTONS
+function plusSlides(n, slideShowID) {
+  slideIndex +=n;
+  showSlides(slideIndex,slideShowID);
+  
+}
+
+// CONTROLS
+function currentSlide(n,slideShowID) {
+    slideIndex = n;
+    showSlides(slideIndex,slideShowID);
+}
+
+function showSlides(n, slideShowID) {
+    let i;
+    let slides = document.getElementById(slideShowID).getElementsByClassName("mySlides");
+    let dots = document.getElementById(slideShowID).getElementsByClassName("dot");
+    /*
+     let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot"); */
+
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+/*
+window.onload = function() {
+    for(let i=3;i<=4;i++){
+        console.log(i);
+        showSlides(1, `slideshow${i}`); // Zajistíme, že první slideshow bude zobrazená hned
+       
+    }
+    //showSlides(1, 'slideshow3'); // Zajistíme, že první slideshow bude zobrazená hned
+    //showSlides(1, 'slideshow4'); // Pokud máte více slideshow, přidejte i ty
+};*/
+
+
+/*
+
+let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
+// NEXT AND PREVIOUS BUTTONS
+function plusSlides(n, slideShowID) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// CONTROLS
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function showSlides(n, slideShowID) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
 }
+*/
