@@ -157,6 +157,34 @@ img{
     margin-bottom: 20px;
 }*/
 
+
+
+/* TRAIN TYPES  */
+.train-types{
+    padding: 40px 0;
+}
+
+.train-types .train-types-heading{
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.train-types-grid{ /* company info */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.train-types .card p:nth-child(1), p:nth-child(4){ /* if I want only specific for one P element*/
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+
+
+
+
 /* TESTAMONIALS */
 .testimonials{
     padding: 40px 0;
@@ -471,6 +499,12 @@ img{
     background: var(--primary-color);
     color: white;
 }
+
+.bg-white{
+    background: white;
+    color: black;
+}
+
 
 .bg-light{
     background: var(--najbrt-light-blue-color);
