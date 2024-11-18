@@ -143,7 +143,7 @@ function openModal(image) {
     var modal = document.getElementById("imageModal");
     var modalImg = document.getElementById("modalImage");
     modal.style.display = "block";
-    modalImg.src = image.src; // Získání cesty kliknutého obrázku
+    modalImg.src = image.src; // getting path of the clicked image
   }
   
   function closeModal() {
