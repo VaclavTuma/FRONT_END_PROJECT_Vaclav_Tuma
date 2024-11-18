@@ -138,6 +138,9 @@ function showSlides(n, slideShowID) {
     dots[slideIndex-1].className += " active";
 }
 
+
+
+
 /*
 window.onload = function() {
     for(let i=3;i<=4;i++){
