@@ -176,16 +176,25 @@ img{
     gap: 30px;
     
 }
-
-.train-types .card p:nth-child(1), p:nth-child(6){ /* if I want only specific for one P element*/
+.train-types .card p:nth-child(1){
+    /*margin-top: 10px;*/
+    margin: 20px 1.5%;
+    font-weight: bold;
+    font-size: 30px;
+    
+    /*margin-bottom: 20px;*/
+}
+.train-types .card p:nth-child(6){ /* if I want only specific for one P element*/
     margin-top: 30px;
     font-weight: bold;
 }
 
-.Pendolino{
-    width: 5%;
-    margin-top: 20000px;
+.train-types .card p:nth-child(5), p:nth-child(6), p:nth-child(7), p:nth-child(8), p:nth-child(9){ /* if I want only specific for one P element*/
+    width: 97%;
+    text-align: justify;
+    margin-left: 1.5%;
 }
+
 
 
 
