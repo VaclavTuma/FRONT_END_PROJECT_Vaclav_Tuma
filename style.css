@@ -5,8 +5,6 @@
 }
 
 :root{
-    
-    /*--primary-color: #00AEEF;*/
     --primary-color: #0056B8;
     --najbrt-blue-color: #0056B8;
     --najbrt-ligit-gray-color: #A0A5A9;
@@ -50,13 +48,11 @@ img{
     justify-content: space-between; /* this pushes menue to the side*/
     align-items: center;
     margin-top: 20px;
-    
 }
 
 .Nav_bar .Container .Logo{
     max-width: 20%;
-    max-height: 200px;
-    
+    max-height: 200px;   
 }
 
 .Nav_bar .Main_menu ul{
@@ -88,17 +84,13 @@ img{
 /* H E R O*/
 .hero{
     margin-bottom: 50px;
-    
 }
 
 .hero .Container{
     background: url(../Images/Railjet1.jpg) no-repeat;
-    /*background-size: contain;*/
     background-size: 97%;
     background-position: center 90px;
-    /*background-position: center bottom;*/
-    height: 100%;
-      
+    height: 100%;  
 }
 
 .hero .hero-content{
@@ -121,11 +113,9 @@ img{
 
 
 /* MAP */
-
 .map{
     padding: 10px 0 40px;
-    border-top: 10px solid yellow;
-    
+    border-top: 10px solid yellow;  
 }
 
 .map .map-heading{
@@ -138,24 +128,6 @@ img{
     margin-bottom: 10px;
 }
 
-
-/* VIDEO */
-/*
-.video {
-    padding: 10px 0 40px;
-    border-top: 10px solid yellow;
-}
-
-.video .video-content{
-    display: flex;
-    flex-direction: column; /* due to this is button under video*/
-   /* align-items: center; /* now button will not be wide*/
-  /*  
-}
-
-.video-preview{
-    margin-bottom: 20px;
-}*/
 
 
 
@@ -172,18 +144,15 @@ img{
 .train-types-grid{ /* company info */
     display: grid;
     flex-direction: column;
-    /*grid-template-columns: repeat(4,1fr);*/
     gap: 30px;
-    
 }
+
 .train-types .card p:nth-child(1){
-    /*margin-top: 10px;*/
     margin: 20px 1.5%;
     font-weight: bold;
     font-size: 30px;
-    
-    /*margin-bottom: 20px;*/
 }
+
 .train-types .card p:nth-child(6){ /* if I want only specific for one P element*/
     margin-top: 30px;
     font-weight: bold;
@@ -196,29 +165,22 @@ img{
 }
 
 
-
-
-
-
-
-
-
-/* P O K U S */ 
+/* SLIDESHOW*/
 
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
   
-  /* Hide the images by default */
-  .mySlides {
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
+}
   
-  /* Next & previous buttons */
-  .prev, .next {
+/* Next & previous buttons */
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -231,23 +193,23 @@ img{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+}
   
 
-  
-  /* DOTS  */
-  .dot {
+
+/* DOTS  */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -257,60 +219,23 @@ img{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
+}
   
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: var(--primary-color);
-  }
+}
   
-  /* Fading animation */
-  .fade {
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 0.5s;
-  }
+}
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TESTAMONIALS *//*
-.testimonials{
-    padding: 40px 0;
 }
 
-.testimonials .testimonials-heading{
-    width: 700px;
-    margin-bottom: 40px;
-}
-
-.testamonials-grid{ 
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-}
-
-.testimonials .card p:nth-child(2){ 
-    margin-top: 30px;
-    font-weight: bold;
-}*/
 
 
 
@@ -329,14 +254,12 @@ img{
 
 
 
-
 /* TRAIN CLASSES*/
 .train-class-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
     margin-top: 25px;
-    
 }
 
 .train-class .train-class-card-subheading{
@@ -382,7 +305,6 @@ img{
 
 
 /* MAKE PICTURE LARGER */
-
 .modal {
     display: none;
     position: fixed;
@@ -393,18 +315,16 @@ img{
     width: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8); /* background */
-  }
+}
   
 /* LARGE PICTURE */
 .modal-content {
     margin: auto;
     display: block;
-  
     min-width: 900px;
     min-height: 480px;
     max-width: 70%;
     max-height: 90%;
-
 }
   
 /* CLOSE BUTTON */
@@ -422,51 +342,9 @@ img{
 
 
 
-
-
-/* PRICING */
-/*
-.pricing-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    margin-top: 50px;
-    
-}
-
-.pricing .pricing-card-subheading{
-    margin-bottom: 30px;
-}
-
-.pricing .pricing-card-price{
-    margin-bottom: 30px;
-    padding: 20px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.pricing ul{
-    margin: 30px 0;
-}
-
-.pricing ul li{
-    margin-bottom: 20px;
-}
-
-.pricing ul li i{
-    margin-right: 10px;
-}
-
-.pricing ,.pricing-footer{
-    margin: 30px 0;
-}*/
-
-
-
 /* FAQ */
-
 .faq{
     padding: 40px 0;
-    
 }
 
 .faq .faq-group{
@@ -487,8 +365,7 @@ img{
 
 .faq h3{
     color: white;
-    transition: 0.5s;
-    
+    transition: 0.5s; 
 }
 
 
@@ -511,11 +388,10 @@ img{
     display: none;
 }
 
-.faq .faq-group .faq-group-body.open{ /* if it has open then it is  showen*/
+.faq .faq-group .faq-group-body.open{
     display: block;
     color: rgb(28, 27, 27);
     transition: 0.5s;
-    
 }
 
 /* faq menu */
@@ -544,7 +420,6 @@ img{
     background: var(--primary-color);
     color: white;
     padding: 10px 50px;
-    
 }
 
 
@@ -552,7 +427,6 @@ img{
 /* FOOTER */
 .footer{
     padding: 40px 0;
-
 }
 
 .footer h4{
@@ -591,9 +465,6 @@ img{
 .footer .card{
     margin: 20px 30px 30px 0;
 }
-
-
-
 
 .socialMedia{
     max-width: 350px;
@@ -711,7 +582,6 @@ img{
     color: black;
 }
 
-
 .bg-light{
     background: var(--najbrt-light-blue-color);
     color: black;
@@ -755,7 +625,6 @@ img{
     position: fixed;
     top: 0;
     right: -300px;
-    
     width: 250px;
     height: 100%;
     z-index: 100;
@@ -772,7 +641,6 @@ img{
 .mobile-menu ul{
     margin-top: 100px;
     padding-right: 10px;
-
 }
 
 .mobile-menu ul li{
@@ -796,12 +664,11 @@ img{
     }
 
 
-        /* HERO */
+    /* HERO */
     .hero .Container{
         background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
         background-size: 96%;
         background-position: center 90px;
-        
     }
 
     .hero .hero-content{
@@ -819,7 +686,6 @@ img{
         margin-bottom: 10px;
         display: block;
         width: 100%;
-
     }
 
     /* DOTS  */
@@ -842,15 +708,10 @@ img{
     }
 
     .close {
-        
         top: 85%;
         right: 47%;
         font-size: 60px;
     }
-
-    
-
-
 }
 
 @media (max-width:736px){
@@ -859,12 +720,11 @@ img{
     }
 
 
-        /* HERO */
+    /* HERO */
     .hero .Container{
         background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
         background-size: 95%;
         background-position: center 150px;
-        
     }
 
     .hero .hero-content{
@@ -903,13 +763,10 @@ img{
     }
 
     .close {
-        
         top: 85%;
         right: 47%;
         font-size: 60px;
     }
-  
-
 }
 
 
@@ -926,7 +783,6 @@ img{
         padding: 0 15px;
     }
 
-
     .Container .Logo{
         width: 200px;
         height: 40px;
@@ -938,8 +794,7 @@ img{
     .hero .Container{
         background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
         background-size: 94%;
-        background-position: center 150px;
-        
+        background-position: center 150px;  
     }
 
     .hero .hero-content{
@@ -957,32 +812,18 @@ img{
         margin-bottom: 10px;
         display: block;
         width: 100%;
-
     }
-
-
 
   
-  /* DOTS  */
-  .dot {
-    cursor: pointer;
-    height: 25px;
-    width: 25px;
-    margin: 0 10px;
-    margin-bottom: 20px;
-  }
+    /* DOTS  */
+    .dot {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
   
-
-
-    /* TESTAMONIALS */ 
-    .testimonials .testimonials-heading{
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .testimonials .testamonials-grid, .pricing .pricing-grid, .footer .footer-grid{ /* not have to do for testamonials and pricing grid separatly*/
-        grid-template-columns: 1fr; /* one single column */
-    }
 
 
     /* LARGE PICTURE */
@@ -994,13 +835,11 @@ img{
     }
 
     .close {
-        
         top: 85%;
         right: 47%;
         font-size: 60px;
     }
   
-
 
     /* FOOTER */
     .footer .card{
@@ -1034,10 +873,6 @@ img{
         align-items: center;
         gap: 30px;
     }
-
-
-
-
 }
 
 @media (max-width:500px){

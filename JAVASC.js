@@ -40,19 +40,8 @@ document.addEventListener('DOMContentLoaded',function(){
         }); 
         
     });
-    
-
-   
-    
-
 });
 
-/*
-let map2 = L.map('map2').setView([49.799,15.441],7); // coordinates and zoom level
-let osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-    maxZoom: 19,
-    attribution:"© OpenStreetMap"
-}).addTo(map2);*/
 
 // fetch geojson data
 const fetch_data = async() =>{
@@ -102,11 +91,8 @@ document.addEventListener('DOMContentLoaded',() =>{
 
 
 
-
-
-// P O K U S
+// SLIDESHOW
 let slideIndex = 1;
-//showSlides(slideIndex);
 
 // NEXT AND PREVIOUS BUTTONS
 function plusSlides(n, slideShowID) {
@@ -144,7 +130,6 @@ function showSlides(n, slideShowID) {
     }
     
     
-    
 
     if (n > slides.length) {
         slideIndex = 1
@@ -169,59 +154,9 @@ function openModal(image) {
     var modalImg = document.getElementById("modalImage");
     modal.style.display = "block";
     modalImg.src = image.src; // getting path of the clicked image
-  }
+}
   
-  function closeModal() {
+function closeModal() {
     var modal = document.getElementById("imageModal");
     modal.style.display = "none";
-  }
-
-/*
-window.onload = function() {
-    for(let i=3;i<=4;i++){
-        console.log(i);
-        showSlides(1, `slideshow${i}`); // Zajistíme, že první slideshow bude zobrazená hned
-       
-    }
-    //showSlides(1, 'slideshow3'); // Zajistíme, že první slideshow bude zobrazená hned
-    //showSlides(1, 'slideshow4'); // Pokud máte více slideshow, přidejte i ty
-};*/
-
-
-/*
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// NEXT AND PREVIOUS BUTTONS
-function plusSlides(n, slideShowID) {
-  showSlides(slideIndex += n);
 }
-
-// CONTROLS
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n, slideShowID) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-}
-*/
