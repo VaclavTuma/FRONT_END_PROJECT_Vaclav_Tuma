@@ -1,6 +1,10 @@
+let ksi = 0;
+let ksi2 = 0;
 document.addEventListener('DOMContentLoaded',function(){
     const faqContainer = document.querySelector('.faq-content');
 
+    ksi = 1;
+    ksi2 = 1;
     faqContainer.addEventListener('click',function(e){
         const groupHeader = e.target.closest('.faq-group-header');
         if(!groupHeader){
@@ -31,8 +35,10 @@ document.addEventListener('DOMContentLoaded',function(){
                 otherIcon.classList.add('fa-plus');
 
             }
-        }); //
+        }); 
+        
     });
+    
 
    
     
@@ -117,9 +123,24 @@ function showSlides(n, slideShowID) {
     let i;
     let slides = document.getElementById(slideShowID).getElementsByClassName("mySlides");
     let dots = document.getElementById(slideShowID).getElementsByClassName("dot");
-    /*
-     let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot"); */
+
+    if(slideShowID == "slideshow3" && ksi == 1){
+        document.getElementById("coverImage").classList.add("hidden");
+        ksi = 0;
+    }
+    if(slideShowID == "slideshow4" && ksi2 == 1){
+        document.getElementById("coverImage2").classList.add("hidden");
+        ksi2 = 0;
+        
+    }
+    if(ksi == 1){
+        document.getElementById("coverImage").classList.add("hidden");
+    }
+    if(ksi == 1){
+        document.getElementById("coverImage").classList.add("hidden");
+    }
+    
+    
 
     if (n > slides.length) {
         slideIndex = 1

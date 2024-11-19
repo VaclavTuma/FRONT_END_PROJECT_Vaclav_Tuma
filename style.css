@@ -365,7 +365,9 @@ img{
     margin: 30px 0;
 }
 
-
+.hidden {
+    display: none;
+}
 
 
 
@@ -387,7 +389,10 @@ img{
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%;
+  
+    min-width: 900px;
+    min-height: 480px;
+    max-width: 70%;
     max-height: 90%;
 
 }
@@ -806,21 +811,25 @@ img{
         width: 100%;
 
     }
+
+    /* LARGE PICTURE */
+    .modal-content {
+        margin: auto;
+        display: block;
+        min-width: 250px;
+        min-height: 250px;
+        max-width: 95%;
+        max-height: 70%;
+    }
+
+    .close {
+        
+        top: 85%;
+        right: 47%;
+        font-size: 60px;
+    }
+
     
-        /* LARGE PICTURE */
-        .modal-content {
-            margin: auto;
-            display: block;
-            max-width: 95%;
-            max-height: 70%;
-        }
-    
-        .close {
-            
-            top: 85%;
-            right: 47%;
-            font-size: 60px;
-        }
 
 
 }
