@@ -1,10 +1,12 @@
-let ksi = 0;
-let ksi2 = 0;
+let pom,pom2,pom3,pom4 = 0;
+
 document.addEventListener('DOMContentLoaded',function(){
     const faqContainer = document.querySelector('.faq-content');
 
-    ksi = 1;
-    ksi2 = 1;
+    pom = 1;
+    pom2 = 1;
+    pom3 = 1;
+    pom4 = 1;
     faqContainer.addEventListener('click',function(e){
         const groupHeader = e.target.closest('.faq-group-header');
         if(!groupHeader){
@@ -124,21 +126,23 @@ function showSlides(n, slideShowID) {
     let slides = document.getElementById(slideShowID).getElementsByClassName("mySlides");
     let dots = document.getElementById(slideShowID).getElementsByClassName("dot");
 
-    if(slideShowID == "slideshow3" && ksi == 1){
-        document.getElementById("coverImage").classList.add("hidden");
-        ksi = 0;
+    if(slideShowID == "slideshow1" && pom == 1){
+        document.getElementById("coverImage1").classList.add("hidden");
+        pom = 0;
     }
-    if(slideShowID == "slideshow4" && ksi2 == 1){
+    if(slideShowID == "slideshow2" && pom2 == 1){
         document.getElementById("coverImage2").classList.add("hidden");
-        ksi2 = 0;
-        
+        pom2 = 0;
     }
-    if(ksi == 1){
-        document.getElementById("coverImage").classList.add("hidden");
+    if(slideShowID == "slideshow3" && pom3 == 1){
+        document.getElementById("coverImage3").classList.add("hidden");
+        pom3 = 0;
     }
-    if(ksi == 1){
-        document.getElementById("coverImage").classList.add("hidden");
+    if(slideShowID == "slideshow4" && pom4 == 1){
+        document.getElementById("coverImage4").classList.add("hidden");
+        pom4 = 0;
     }
+    
     
     
 
