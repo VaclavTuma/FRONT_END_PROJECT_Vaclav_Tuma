@@ -83,24 +83,18 @@ img{
 
 /* H E R O*/
 .hero{
-    margin-bottom: 50px;
+    margin-bottom: 18px;
 }
 
 .hero .Container{
     background: url(../Images/Railjet1.jpg) no-repeat;
     background-size: 97%;
-    background-position: center 90px;
+    background-position: center 80px;
     height: 100%;  
 }
 
 .hero .hero-content{
     width: 100%;
-}
-
-.hero .hero-text{
-    width: 100%;
-    margin-top: 69%;
-    margin-bottom: 10px;
 }
 
 .hero .hero-content .hero-heading{
@@ -111,11 +105,23 @@ img{
     padding: 10px;
 }
 
+.hero .hero-text{
+    width: 100%;
+    margin-top: 69%;
+}
+
+
+.hero .hero-buttons{
+    margin-top: 12px;
+}
+
+
+
 
 /* MAP */
 .map{
-    padding: 10px 0 40px;
-    border-top: 10px solid yellow;  
+    padding: 2px 0 40px;
+    border-top: 5px solid yellow;  
 }
 
 .map .map-heading{
@@ -137,7 +143,7 @@ img{
 }
 
 .train-types .train-types-heading{
-    width: 700px;
+    width: 900px;
     margin-bottom: 40px;
 }
 
@@ -241,7 +247,7 @@ img{
 
 /* UTILITY CLASS - for different size of containers */
 .Container{
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;  /* top and bottom 0 | left and right auto */
     padding: 0 15px; /* top and bottom 0 | left and right 15px */
 }
@@ -526,7 +532,7 @@ img{
 
 /* TEXT CLASSES - different size classes */
 .text-xxl{
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 1.2;
     font-weight: 600;
     margin: 40px 0 20px;
@@ -660,7 +666,7 @@ img{
 /* M E D I A  Q U E R I */
 @media (max-width:960px){
     .text-xl{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
 
@@ -668,7 +674,7 @@ img{
     .hero .Container{
         background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
         background-size: 96%;
-        background-position: center 90px;
+        background-position: center 80px;
     }
 
     .hero .hero-content{
@@ -678,7 +684,7 @@ img{
 
     .hero .hero-text{
         width: 100%;
-        margin-top: 71%;
+        margin-top: 69%;
         margin-bottom: 12px;
     }
 
@@ -716,7 +722,7 @@ img{
 
 @media (max-width:736px){
     .text-xl{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
 
@@ -724,7 +730,7 @@ img{
     .hero .Container{
         background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
         background-size: 95%;
-        background-position: center 150px;
+        background-position: center 80px;
     }
 
     .hero .hero-content{
@@ -734,7 +740,7 @@ img{
 
     .hero .hero-text{
         width: 100%;
-        margin-top: 71%;
+        margin-top: 69%;
         margin-bottom: 12px;
     }
 
@@ -770,7 +776,24 @@ img{
 }
 
 
-@media (max-width:670px){ /* smaller mobile*/
+@media (max-width:644px){ /* smaller mobile 680*/
+    /* TEXT SIZES*/
+    .text-xxl{
+        font-size: 2rem;
+    }
+
+    .text-xl{
+        font-size: 1.9rem;
+    }
+
+    .text-lg{
+        font-size: 1.5rem;
+    }
+
+    .text-md{
+        font-size: 1.1rem;
+    }
+
 
     /* NAVBAR */
     .Nav_bar .Main_menu{
@@ -794,7 +817,7 @@ img{
     .hero .Container{
         background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
         background-size: 94%;
-        background-position: center 150px;  
+        background-position: center 100px;  
     }
 
     .hero .hero-content{
@@ -804,7 +827,7 @@ img{
 
     .hero .hero-text{
         width: 100%;
-        margin-top: 71%;
+        margin-top: 70%;
         margin-bottom: 12px;
     }
 
@@ -850,21 +873,6 @@ img{
         text-align: center;
     }
 
-
-    /* TEXT SIZES*/
-    .text-xl{
-        font-size: 1.9rem;
-    }
-
-    .text-lg{
-        font-size: 1.5rem;
-    }
-
-    .text-md{
-        font-size: 1.1rem;
-    }
-
-
     .socialMedia{
         max-width: 80%;
         margin: auto;
@@ -875,8 +883,21 @@ img{
     }
 }
 
-@media (max-width:500px){
+@media (max-width:510px){
     .text-xxl{
         font-size: 2rem;
+    }
+
+    /* HERO */
+    .hero .Container{
+        background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
+        background-size: 94%;
+        background-position: center 110px;  
+    }
+
+    .hero .hero-text{
+        width: 100%;
+        margin-top: 100%;
+        margin-bottom: 12px;
     }
 }
