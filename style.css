@@ -417,8 +417,7 @@ img{
 .faq ul.faq-menu li{
     padding: 10px 20px;
     border-radius: 5px;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .faq ul.faq-menu li.active{
@@ -885,6 +884,13 @@ img{
         align-items: center;
         gap: 30px;
     }
+
+    
+    /* FOOTER */
+    .footer-grid{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width:512px){
@@ -910,5 +916,11 @@ img{
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    /* FOOTER */
+    .footer-grid{
+        display: flex;
+        flex-direction: column;
     }
 }
