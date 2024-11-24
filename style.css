@@ -776,7 +776,7 @@ img{
 }
 
 
-@media (max-width:644px){ /* smaller mobile 680*/
+@media (max-width:655px){ /* smaller mobile 680*/
     /* TEXT SIZES*/
     .text-xxl{
         font-size: 2rem;
@@ -817,7 +817,7 @@ img{
     .hero .Container{
         background: url('../Images/Railjet1.jpg') no-repeat; /* just smaller picture of hero, I don't have here*/
         background-size: 94%;
-        background-position: center 100px;  
+        background-position: center 70px;  
     }
 
     .hero .hero-content{
@@ -883,7 +883,7 @@ img{
     }
 }
 
-@media (max-width:510px){
+@media (max-width:512px){
     .text-xxl{
         font-size: 2rem;
     }
@@ -897,7 +897,7 @@ img{
 
     .hero .hero-text{
         width: 100%;
-        margin-top: 100%;
+        margin-top: 72%;
         margin-bottom: 12px;
     }
 }
