@@ -110,7 +110,6 @@ img{
     margin-top: 69%;
 }
 
-
 .hero .hero-buttons{
     margin-top: 12px;
 }
@@ -143,7 +142,7 @@ img{
 }
 
 .train-types .train-types-heading{
-    width: 900px;
+    width: 100%;
     margin-bottom: 40px;
 }
 
@@ -260,7 +259,7 @@ img{
 
 
 
-/* TRAIN CLASSES*/
+/* TRAIN CLASSES */
 .train-class-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -847,7 +846,12 @@ img{
         margin-bottom: 20px;
     }
   
-
+    /* train classes */
+    .train-class-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     /* LARGE PICTURE */
     .modal-content {
@@ -899,5 +903,12 @@ img{
         width: 100%;
         margin-top: 72%;
         margin-bottom: 12px;
+    }
+
+    /* train classes */
+    .train-class-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
