@@ -8,7 +8,7 @@ It is built with: HTML - index.html | CSS - style.css | JavaScript - JAVASCRIPT.
 
 How to run webpage?
 Webside is implemented to Netlify:
-https://thriving-cheesecake-f7e786.netlify.app/
+https://explereczechia.netlify.app/
 
 <img src="./Images/preview.png" width="100%" style="display:block; margin: 40px auto"/>
 
