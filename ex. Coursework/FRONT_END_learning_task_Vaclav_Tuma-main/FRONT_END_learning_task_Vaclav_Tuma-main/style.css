@@ -1,0 +1,542 @@
+* {
+    box-sizing: border-box; /* after margin and padding it will not effect size of the element */
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: white;
+    overflow-x: hidden; /* never will be visible horizontal scroll*/
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%; /* if I put image to div with certain size it will not brake from div*/
+}
+
+
+.Nav_bar{
+    background: white;
+    padding: 20px;
+}
+
+
+.Nav_bar .Container{
+    display: flex;
+    justify-content: space-between; /* this pushes menue to the side*/
+    align-items: center;
+}
+
+.Nav_bar .Main_menu ul{
+    display: flex;
+}
+
+.Nav_bar ul li a{
+    padding: 10px 20px;
+    display: block;
+    font-family: 600;
+    transition: 0.5s;
+}
+
+.Nav_bar ul li a:hover{
+    color: var(--primary-color) ;
+}
+
+
+.Nav_bar ul li:last-child a { /* because blog was too close border of button*/
+    margin-left: 10px;
+}
+
+.Nav_bar ul li a i { /* because icon is too close to the tect inside button*/
+    margin-right: 10px;
+}
+
+
+/* H E R O*/
+.hero{
+    margin-bottom: 50px;
+}
+
+.hero .Container{
+    background: url(../Images/Images.png) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content{
+    width: 70%;
+}
+
+.hero .hero-text{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+
+/* VIDEO */
+.video {
+    padding: 10px 0 40px;
+}
+
+.video-content{
+    display: flex;
+    flex-direction: column; /* due to this is button under video*/
+    align-items: center; /* now button will not be wide*/
+}
+
+.video-preview{
+    margin-bottom: 20px;
+}
+
+/* TESTAMONIALS */
+.testimonials{
+    padding: 40px 0;
+}
+
+.testimonials .testimonials-heading{
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.testamonials-grid{ /* company info */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.testimonials .card p:nth-child(2){ /* if I want only specific for one P element*/
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+
+/* UTILITY CLASS - for different size of containers */
+.Container{
+    max-width: 1100px;
+    margin: 0 auto;  /* top and bottom 0 | left and right auto */
+    padding: 0 15px; /* top and bottom 0 | left and right 15px */
+}
+
+.Container-sm{
+    max-width: 800px;
+    margin: 0 auto;  /* top and bottom 0 | left and right auto */
+    padding: 0 15px; /* top and bottom 0 | left and right 15px */
+}
+
+
+
+/* PRICING */
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+
+.pricing .pricing-card-subheading{
+    margin-bottom: 30px;
+}
+
+.pricing .pricing-card-price{
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.pricing ul{
+    margin: 30px 0;
+}
+
+.pricing ul li{
+    margin-bottom: 20px;
+}
+
+.pricing ul li i{
+    margin-right: 10px;
+}
+
+.pricing ,.pricing-footer{
+    margin: 30px 0;
+}
+
+
+
+/* FAQ */
+
+.faq{
+    padding: 40px 0;  
+}
+
+.faq .faq-group{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px ;
+}
+
+.faq .faq-group .faq-group-header{
+    padding: 20px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.faq .faq-group .faq-group-header h4{
+    font-weight: 600;
+    width: 95%;
+}
+
+.faq .faq-group .faq-group-header i{
+    position: absolute;
+    right: 0;
+    top: 35px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.faq .faq-group .faq-group-body{
+    display: none;
+}
+
+.faq .faq-group .faq-group-body.open{ /* if it has open then it is  showen*/
+    display: block;
+}
+
+.faq ul.faq-menu{
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ddd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq ul.faq-menu li{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.faq ul.faq-menu li.active{
+    background: var(--primary-color);
+    color: white;
+}
+
+
+
+/* FOOTER */
+.footer{
+    padding: 40px 0;
+
+}
+
+.footer h4{
+   margin-bottom: 10px; 
+}
+
+.footer ul li{
+    line-height: 2.5;
+}
+
+.footer a{
+    color: #ccc;
+}
+
+.footer i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer input[type='email']{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.footer .card{
+    margin: 20px 30px 30px 0;
+}
+
+
+
+
+/* CARD */
+.card{
+    background: white;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* BUTTONS */
+.btn{
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.btn:hover{ /* LIGHTEN THE COLOR OF THE BACKGROUND A LITTLE BIT AFTER POINTNG TO THAT */
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-dark{
+    background: black;
+    color: white;
+}
+
+.btn-block{
+    display: block;
+    width: 100%;
+}
+
+
+/* TEXT CLASSES - different size classes */
+.text-xxl{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl{
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg{ /* large */
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md{ /* medium */
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm{ /* small */
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* BACKGROUND */
+.bg-primary{
+    background: var(--primary-color);
+    color: white;
+}
+
+.bg-light{
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-dark{
+    background: var(--dark-color);
+    color: white;
+}
+
+.bg-black{
+    background: black;
+    color: white;
+}
+
+
+/* HAMBURHGER BUTTON */
+.hamburger-button{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000; /* i want hamburger menu to be above everything */
+}
+
+.hamburger-button .hamburger-line{
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+}
+
+/* MOBILE MENU STYLE */
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    transition: right 0.5s ease-in-out;
+}
+
+
+.mobile-menu.active{
+    right: 0px;
+}
+
+.mobile-menu ul{
+    margin-top: 100px;
+    padding-right: 10px;
+
+}
+
+.mobile-menu ul li{
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a{
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+/* M E D I A  Q U E R I */
+@media (max-width:960px){
+    .text-xl{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:670px){ /* smaller mobile*/
+    .Nav_bar .Main_menu{
+        display: none;
+    }
+
+    .Nav_bar .hamburger-button{
+        display: block;
+    }
+
+    .hero .Container{
+        background: url('../Images/hero-bg-mobile.png') no-repeat; /* just smaller picture of hero, I don't have here*/
+        background-size: 350px;
+        background-position: bottom;
+        height: 770px;
+    }
+
+    .hero .hero-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .hero-text{
+        width: 100%;
+    }
+
+    .hero .hero-buttons .btn{
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+
+    }
+
+
+    /* TESTAMONIALS */ 
+    .testimonials .testimonials-heading{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .testimonials .testamonials-grid, .pricing .pricing-grid, .footer .footer-grid{ /* not have to do for testamonials and pricing grid separatly*/
+        grid-template-columns: 1fr; /* one single column */
+    }
+
+    /* FOOTER */
+    .footer .card{
+        margin-right: 0;
+    }
+    
+    .footer .footer-grid > div{
+        text-align: center;
+    }
+
+
+    /* TEXT SIZES*/
+    .text-xl{
+        font-size: 1.9rem;
+    }
+
+    .text-lg{
+        font-size: 1.5rem;
+    }
+
+    .text-md{
+        font-size: 1.1rem;
+    }
+
+
+    
+
+
+
+
+}
+
+@media (max-width:500px){
+    .text-xxl{
+        font-size: 2rem;
+    }
+}

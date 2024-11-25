@@ -6,5 +6,9 @@ Basic of this project is from https://www.youtube.com/watch?v=HXYZxVbWkjc&t=1160
 
 It is built with: HTML - index.html | CSS - style.css | JavaScript - JAVASCRIPT.js | Images/ - all necessary images for webside  
 
+How to run webpage?
+Webside is implemented to Netlify:
+https://thriving-cheesecake-f7e786.netlify.app/
+
 <img src="./Images/preview.png" width="100%" style="display:block; margin: 40px auto"/>
 
