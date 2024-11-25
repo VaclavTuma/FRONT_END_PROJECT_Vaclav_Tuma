@@ -3,7 +3,7 @@ let pom,pom2,pom3,pom4 = 0;
 document.addEventListener('DOMContentLoaded',function(){
     const faqContainer = document.querySelector('.faq-content');
 
-    pom = 1;
+    pom  = 1;
     pom2 = 1;
     pom3 = 1;
     pom4 = 1;
@@ -35,10 +35,8 @@ document.addEventListener('DOMContentLoaded',function(){
                 otherGroupBody.classList.remove('open');
                 otherIcon.classList.remove('fa-minus');
                 otherIcon.classList.add('fa-plus');
-
             }
-        }); 
-        
+        });  
     });
 });
 
@@ -98,7 +96,6 @@ let slideIndex = 1;
 function plusSlides(n, slideShowID) {
   slideIndex +=n;
   showSlides(slideIndex,slideShowID);
-  
 }
 
 // CONTROLS
